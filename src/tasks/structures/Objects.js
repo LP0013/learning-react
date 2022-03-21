@@ -14,9 +14,9 @@ function Objects() {
 
     return <div>
         <h1>Objects</h1>
-        <button onClick={() => setObj({...obj, prop1: 'hello, world'})}>Prop1</button>
-        <button onClick={() => setObj({...obj, prop2: 'how are you, world'})}>Prop2</button>
-        <button onClick={() => setObj({...obj, prop3: 'bye, world'})}>Prop3</button>
+        <button onClick={() => setObj({...obj, prop1: 'hello, world...'})}>Prop1</button>
+        <button onClick={() => setObj({...obj, prop2: 'how are you, world ?'})}>Prop2</button>
+        <button onClick={() => setObj({...obj, prop3: 'bye, world.'})}>Prop3</button>
         <p>{obj.prop1}</p>
         <p>{obj.prop2}</p>
         <p>{obj.prop3}</p>
