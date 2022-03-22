@@ -6,12 +6,14 @@ import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 import Objects from "./tasks/structures/Objects";
 import InputsToObjects from "./tasks/structures/InputsToObjects";
+import ObjectsArray from "./tasks/structures/ObjectsArray";
 
 ReactDOM.render(
     <React.StrictMode>
         {/*<App2 />*/}
         <Objects/>
         <InputsToObjects/>
+        <ObjectsArray/>
     </React.StrictMode>,
     document.getElementById('root')
 );

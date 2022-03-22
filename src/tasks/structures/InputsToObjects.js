@@ -56,7 +56,7 @@ function InputsToObjects() {
         <br/>
         {obj.prop1}-{obj.prop2}-{obj.prop3}
 
-        <h2>Homework</h2>
+        <h3>Homework</h3>
         <input value={xDate.year} type="number" onChange={event => changeDate(event, 'year')}/>
         <input value={xDate.month} type="number" onChange={event => changeDate(event, 'month')}/>
         <input value={xDate.day} type="number" onChange={event => changeDate(event, 'day')}/>
