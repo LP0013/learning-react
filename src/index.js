@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Objects from "./tasks/structures/Objects";
 import InputsToObjects from "./tasks/structures/InputsToObjects";
 import ObjectsArray from "./tasks/structures/ObjectsArray";
+import ConditionalTagRendering from "./tasks/structures/ConditionalTagRendering";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Objects/>
         <InputsToObjects/>
         <ObjectsArray/>
+        <ConditionalTagRendering/>
     </React.StrictMode>,
     document.getElementById('root')
 );
