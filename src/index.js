@@ -8,6 +8,7 @@ import Objects from "./tasks/structures/Objects";
 import InputsToObjects from "./tasks/structures/InputsToObjects";
 import ObjectsArray from "./tasks/structures/ObjectsArray";
 import ConditionalTagRendering from "./tasks/structures/ConditionalTagRendering";
+import LoopConditionalRendering from "./tasks/structures/LoopConditionalRendering";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
         <InputsToObjects/>
         <ObjectsArray/>
         <ConditionalTagRendering/>
+        <LoopConditionalRendering/>
     </React.StrictMode>,
     document.getElementById('root')
 );
