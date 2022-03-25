@@ -19,7 +19,7 @@ function ListItems() {
         let elem;
         if (!note.isEdit) {
             elem = <span onClick={() => startEdit(index)}>
-			{note.text};
+			{note.text}
 		</span>
         } else {
             elem = <input value={note.text}
@@ -47,10 +47,59 @@ function ListItems() {
         }))
     }
 
+    let [notesHW, setNotesHW] = useState(initNotes);
+    let resultHW = notesHW.map((note, index) => {
+        let content;
+
+        if (!note.isEdit) {
+            content = <li key={index}>{note.text}
+                <button onClick={() => editNote(index)}>Click & Edit...</button>
+            </li>
+        } else {
+            content =
+                <li key={index}><input type="text" value={note.text} onChange={event => changeInpVal(event, index)}/>
+                    <button onClick={() => saveNote(index)}>Click to Save!</button>
+                </li>
+        }
+
+        return content
+    })
+
+    function editNote(index) {
+        setNotesHW(notesHW.map((note, no) => {
+            if (index === no) {
+                return {...note, isEdit: true}
+            } else {
+                return note
+            }
+        }))
+    }
+
+    function saveNote(index) {
+        setNotesHW(notesHW.map((note, no) => {
+            if (index === no) {
+                return {...note, isEdit: false}
+            } else {
+                return note
+            }
+        }))
+    }
+
+    function changeInpVal(event, index) {
+        setNotesHW(notesHW.map((note, no) => {
+            if (index === no) {
+                return {...note, text: event.target.value}
+            } else {
+                return note
+            }
+        }))
+    }
+
     return <div>
         <h1>ListItems</h1>
         <ul>{result}</ul>
         <h3>Homework</h3>
+        <ul>{resultHW}</ul>
     </div>
 }
 
