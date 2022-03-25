@@ -7,8 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import Objects from "./tasks/structures/Objects";
 import InputsToObjects from "./tasks/structures/InputsToObjects";
 import ObjectsArray from "./tasks/structures/ObjectsArray";
-import ConditionalTagRendering from "./tasks/structures/ConditionalTagRendering";
-import LoopConditionalRendering from "./tasks/structures/LoopConditionalRendering";
+import ConditionalTagRendering from "./tasks/editing/ConditionalTagRendering";
+import LoopConditionalRendering from "./tasks/editing/LoopConditionalRendering";
+import Tags from "./tasks/editing/Tags";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <ObjectsArray/>
         <ConditionalTagRendering/>
         <LoopConditionalRendering/>
+        <Tags/>
     </React.StrictMode>,
     document.getElementById('root')
 );
